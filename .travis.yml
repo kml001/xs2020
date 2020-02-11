@@ -6,4 +6,4 @@ script:
   - ssh-add ./id_rsa
   - echo -e "StrictHostKeyChecking no\n" >> ~/.ssh/config
   - git remote add balena $BALENA_REMOTE
-  - git push balena master
+  - git push -f balena master
