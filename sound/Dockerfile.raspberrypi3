@@ -1,0 +1,18 @@
+FROM balenalib/raspberrypi3:buster
+
+# Install desktop environment
+
+RUN install_packages mpg123
+
+# Setting working directory
+WORKDIR /usr/src/app
+
+COPY start.sh start.sh
+COPY assets/*.mp3 .
+#COPY assets/*.ppt* .
+# Adding things to autostart will cause them to be launchd automatically on starup
+#COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
+
+ENV UDEV=1
+
+CMD ["bash", "start.sh"]

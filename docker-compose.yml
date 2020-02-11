@@ -1,0 +1,14 @@
+version: '2'
+services:
+#  sound:
+#    build: ./sound
+#    privileged: true
+#  ppt:
+#    build: ./ppt
+#    privileged: true
+  video: 
+   build: ./video
+   privileged: true
+
+
+
