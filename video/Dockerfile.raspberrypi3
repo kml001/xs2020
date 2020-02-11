@@ -24,7 +24,7 @@ WORKDIR /usr/src/app
 
 COPY start.sh start.sh
 #COPY assets/*.m* .
-wget https://www.dropbox.com/s/47oxdw7xo2leg45/XS-DEMOv1.m4v?dl=0
+RUN wget https://www.dropbox.com/s/47oxdw7xo2leg45/XS-DEMOv1.m4v?dl=0
 COPY assets/*.txt .
 # Adding things to autostart will cause them to be launchd automatically on starup
 COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
