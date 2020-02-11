@@ -4,5 +4,6 @@ script:
   - echo -e $BALENA_DEPLOY_KEY > id_rsa
   - chmod 0600 id_rsa
   - cat balenakey >> ~/.ssh/known_hosts
+  - echo -e "StrictHostKeyChecking no\n" >> ~/.ssh/config
   - git remote add balena $BALENA_REMOTE
   - git push balena master
