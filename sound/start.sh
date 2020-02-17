@@ -4,5 +4,9 @@
 
 #export DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket
 
+if [ $PLAYMP3 -ne 0 ]; then 
+  exit 1
+fi
+
 mpg123 -Z /usr/src/app/*.mp3 
 

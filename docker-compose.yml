@@ -1,14 +1,16 @@
 version: '2'
 services:
-#  sound:
-#    build: ./sound
-#    privileged: true
-#  ppt:
-#    build: ./ppt
-#    privileged: true
+  sound:
+    build: ./sound
+    privileged: true
+    restart: "no"
+  ppt:
+    build: ./ppt
+    privileged: true
+    restart: "no"
   video: 
    build: ./video
    privileged: true
-
+   restart: "no"
 
 
