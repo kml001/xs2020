@@ -2,6 +2,6 @@
 #@pcmanfm --desktop --profile LXDE-pi
 #@xscreensaver -no-splash
 #@loimpress --nologo --show /usr/src/app/Gartner-IT-Xpo-2019.pptx
-@vlc -f -L --sub-filter="marq" --marq-file="/usr/src/app/marquee.txt" /usr/src/app/XS-DEMOv1.m4v
+@vlc -f -L --sub-filter marq --marq-marquee "TEST TEST TEST" /usr/src/app/XS-DEMOv1.m4v
 
 #matchbox-keyboard
