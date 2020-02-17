@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 if [ $PLAYPPT -ne 0 ]; then
- exit 1
+ exit 0
 fi
 
 rm /tmp/.X0-lock &>/dev/null || true
