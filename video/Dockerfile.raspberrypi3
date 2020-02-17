@@ -26,6 +26,8 @@ RUN wget -nv https://www.dropbox.com/s/47oxdw7xo2leg45/XS-DEMOv1.m4v
 COPY vlc_cmd .
 # Adding things to autostart will cause them to be launchd automatically on starup
 COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
+# Clean up UI on VLC start
+RUN echo 'qt-privacy-ask=0' > /root/.config/vlc/vlcrc 
 
 ENV UDEV=1
 
