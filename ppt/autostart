@@ -1,7 +1,7 @@
 @lxpanel --profile LXDE-pi
 #@pcmanfm --desktop --profile LXDE-pi
 #@xscreensaver -no-splash
-@loimpress --nologo --show /usr/src/app/Gartner-IT-Xpo-2019.pptx
+@loimpress --nologo --show /usr/src/app/Gartner-IT-Xpo-2019.odp
 
 
 #matchbox-keyboard

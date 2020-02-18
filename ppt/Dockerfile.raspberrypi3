@@ -19,7 +19,7 @@ RUN echo "#!/bin/bash" > /etc/X11/xinit/xserverrc \
 WORKDIR /usr/src/app
 
 COPY start.sh start.sh
-COPY assets/*.ppt* .
+COPY assets/*.odp .
 # Adding things to autostart will cause them to be launchd automatically on starup
 COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
 
