@@ -26,6 +26,7 @@ COPY assets/*.jpg .
 # Adding things to autostart will cause them to be launchd automatically on starup
 COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
 COPY assets/desktop-items-0.conf /etc/xdg/pcmanfm/LXDE-pi/
+COPY assets/desktop-items-0.conf /etc/xdg/pcmanfm/LXDE-pi/desktop-items-1.conf
 
 ENV UDEV=1
 
