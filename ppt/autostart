@@ -1,5 +1,5 @@
 @lxpanel --profile LXDE-pi
-#@pcmanfm --desktop --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi --set-wallpaper="/usr/src/app/cobra.jpg"
 #@xscreensaver -no-splash
 @loimpress --nologo --show /usr/src/app/Gartner-IT-Xpo-2019.odp
 

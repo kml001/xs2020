@@ -20,6 +20,7 @@ WORKDIR /usr/src/app
 
 COPY start.sh start.sh
 COPY assets/*.odp .
+COPY assets/*.jpg .
 # Adding things to autostart will cause them to be launchd automatically on starup
 COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
 
