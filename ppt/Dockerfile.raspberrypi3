@@ -24,7 +24,7 @@ COPY assets/*.odp .
 COPY assets/*.jpg .
 # Adding things to autostart will cause them to be launchd automatically on starup
 COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
-RUN echo 'desktop_manager/wallpaper="/usr/src/app/cobra.jpg"' >> /etc/xdg/lxsession/LXDE-pi/desktop.conf
+COPY assets/desktop.conf /etc/xdg/lxsession/LXDE-pi/desktop.conf
 
 ENV UDEV=1
 
