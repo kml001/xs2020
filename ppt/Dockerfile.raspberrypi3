@@ -6,7 +6,8 @@ RUN install_packages xserver-xorg-core \
   raspberrypi-ui-mods rpd-icons \
   gtk2-engines-clearlookspix \
   matchbox-keyboard \
-  firefox-esr ttf-mscorefonts-installer libreoffice-impress
+  chromium
+  #firefox-esr ttf-mscorefonts-installer libreoffice-impress
 
 # disable lxpolkit popup warning
 RUN mv /usr/bin/lxpolkit /usr/bin/lxpolkit.bak
@@ -20,11 +21,11 @@ RUN echo "#!/bin/bash" > /etc/X11/xinit/xserverrc \
 WORKDIR /usr/src/app
 
 COPY start.sh start.sh
-COPY assets/*.odp .
+#COPY assets/*.odp .
 COPY assets/*.jpg .
 # Adding things to autostart will cause them to be launchd automatically on starup
 COPY autostart /etc/xdg/lxsession/LXDE-pi/autostart
-COPY assets/desktop.conf /etc/xdg/lxsession/LXDE-pi/desktop.conf
+COPY assets/desktop-items-0.conf /etc/xdg/pcmanfm/LXDE-pi/
 
 ENV UDEV=1
 
