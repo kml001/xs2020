@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-python:buster
+FROM balenalib/raspberrypi3-python:latest
 
 # Install desktop environment
 RUN install_packages xserver-xorg-core \
@@ -6,7 +6,7 @@ RUN install_packages xserver-xorg-core \
   raspberrypi-ui-mods rpd-icons \
   gtk2-engines-clearlookspix \
   matchbox-keyboard \
-  variety obconf chromium
+  obconf chromium
   #firefox-esr ttf-mscorefonts-installer libreoffice-impress
 
 # disable lxpolkit popup warning
