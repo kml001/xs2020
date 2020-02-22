@@ -2,6 +2,6 @@
 @pcmanfm --desktop --profile LXDE-pi 
 #@xscreensaver -no-splash
 #@loimpress --nologo --show /usr/src/app/Gartner-IT-Xpo-2019.odp
-@chromium --no-sandbox --start-fullscreen https://bit.ly/2ujEXBH
+@chromium --no-sandbox --start-fullscreen --disable-infobars https://bit.ly/2ujEXBH
 
 #matchbox-keyboard
