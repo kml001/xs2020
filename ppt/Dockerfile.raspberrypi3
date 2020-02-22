@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-python:latest
+FROM balenalib/raspberrypi3-python:stretch
 
 # Install desktop environment
 RUN install_packages xserver-xorg-core \
