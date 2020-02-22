@@ -1,10 +1,10 @@
-FROM balenalib/raspberrypi3-python:bullseye-run
+FROM balenalib/raspberrypi3:latest-run
 
 # Install desktop environment
 RUN install_packages xserver-xorg-core \
    xinit lxsession desktop-file-utils \
   raspberrypi-ui-mods rpd-icons \
-  gtk2-engines-clearlookspix \
+  gtk2-engines-clearlookspix python \
   matchbox-keyboard \
   obconf chromium
   #firefox-esr ttf-mscorefonts-installer libreoffice-impress
