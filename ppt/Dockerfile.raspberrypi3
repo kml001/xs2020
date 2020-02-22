@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3:latest-run
+FROM balenalib/raspberrypi3:buster-run
 
 # Install desktop environment
 RUN install_packages xserver-xorg-core \
