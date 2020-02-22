@@ -6,7 +6,7 @@ RUN install_packages xserver-xorg-core \
   raspberrypi-ui-mods rpd-icons \
   gtk2-engines-clearlookspix python \
   matchbox-keyboard \
-  obconf chromium
+  obconf chromium pcmanfm-qt
   #firefox-esr ttf-mscorefonts-installer libreoffice-impress
 
 # disable lxpolkit popup warning
