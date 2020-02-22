@@ -1,11 +1,11 @@
-FROM balenalib/raspberrypi3-python:stretch
+FROM balenalib/raspberrypi3:buster
 
 # Install desktop environment
 RUN install_packages xserver-xorg-core \
    xinit lxsession desktop-file-utils \
   raspberrypi-ui-mods rpd-icons \
   gtk2-engines-clearlookspix \
-  matchbox-keyboard \
+  matchbox-keyboard python \
   obconf chromium
   #firefox-esr ttf-mscorefonts-installer libreoffice-impress
 
