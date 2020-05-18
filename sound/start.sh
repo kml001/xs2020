@@ -6,7 +6,7 @@
 
 if [ $PLAYMP3 -ne 0 ]; then 
   exit 0 
+else 
+  mpg123 -Z /usr/src/app/*.mp3 
 fi
-
-mpg123 -Z /usr/src/app/*.mp3 
 
